@@ -1,3 +1,178 @@
-*{
+/* 
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*  2. Remove default margin*/
+* {
+  margin: 0;
+}
+/*  3. Allow percentage-based heights in the application*/
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
   font-family: 'Lato', sans-serif;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Remove built-in form typography styles*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+/* Create a root stacking context*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --primary-color: rgb(18, 11, 9);
+  --accent-color: rgb(255, 255, 255);
+  --secondary-color: #f6aa1cff;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  line-height: 1;
+}
+
+h2 {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin: 0;
+}
+
+
+.bars {
+  width: 30px;
+  height: 5px;
+  background-color: var(--primary-color);
+  margin: 5px;
+}
+
+header {
+  padding: 15px 20px;
+}
+
+.header-content {
+  padding-top: 30px;
+}
+
+.header-title {
+  margin:  6px 0 15px 0;
+}
+
+.header-info {
+  margin: 0 0 15px 0;
+}
+
+
+/* main program section */
+.main-program-section {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.program-card {
+  display: flex;
+  background-color: rgb(73, 71, 71);
+  align-items: center;
+  margin: 10px;
+  padding: 10px 0;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.program-card-img {
+  width: 50px;
+}
+
+.section-title{
+  text-align: center;
+}
+
+.program-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.prgm {
+  width: 40% auto;
+}
+
+.program-info {
+  width: 60%;
+}
+
+.program-card-title {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+.join-btn {
+  color: var(--accent-color);
+  background-color: var(--secondary-color);
+  padding: 17px 23px;
+  border: none;
+}
+
+.join {
+  text-align: center;
+}
+
+/* speakers section */
+.speaker-container {
+  display: flex;
 }
