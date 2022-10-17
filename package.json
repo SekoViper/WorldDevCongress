@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/SekoViper/WorldDevCongress/issues"
   },
-  "homepage": "https://github.com/SekoViper/WorldDevCongress#readme"
+  "homepage": "https://github.com/SekoViper/WorldDevCongress#readme",
+  "devDependencies": {
+    "hint": "^7.1.3"
+  }
 }
