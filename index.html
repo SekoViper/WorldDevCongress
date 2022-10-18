@@ -17,12 +17,34 @@
 </head>
 <body>
   <header class="menu-container">
-    <div class="overlay"></div>
-    <nav class="menu">
+    <div class="toggler">
       <div class="bars"></div>
       <div class="bars"></div>
       <div class="bars"></div>
+    </div>
+    <div class="social-nav">
+      <div class="social-img">
+        <a href="#"><img src="img/facebook_icon.png" alt="facebook icon"></a>
+        <a href="#"><img src="img/telegram_icon.png" alt="telegram icon"></a>
+      </div>
+      <ul class="social-menu">
+        <li class="social-menu-item"><a href="#">English</a></li>
+        <li class="social-menu-item"><a href="#">My Page</a></li>
+        <li class="social-menu-item"><a href="#">Logo Out</a></li>
+      </ul>
+    </div>
+   <div class="nav-container">
+    <a href="/"><img class="logo" src="img/nextgencodez-logo.png" alt="ngc logo"></a>
+    <nav class="nav-menu">
+      <ul class="menu">
+        <li class="menu-items"><a class="active" href="#">About</a></li>
+        <li class="menu-items"><a href="#">Program</a></li>
+        <li class="menu-items"><a href="#">Join</a></li>
+        <li class="menu-items"><a href="#">Sponsor</a></li>
+        <li class="menu-items"><a class="active-btn" href="#">CC Campaign</a></li>
+      </ul>
     </nav>
+   </div>
     <div class="header-content">
       <p class="sub-title">NGC Dev Congress</p>
       <h1 class="header-title">THE WORLD'S LEADING DEVELOPER EVENT</h1>
@@ -45,38 +67,39 @@
             <img class="program-card-img" src="img/iconbox_1.png" alt="content team">
             <h4 class="program-card-title">Content</h4>
           </div>
-          <p class="program-info">Lorem ipsum dolor sit amet contur adipisicing elit. Randae, obcaecati.</p>
+          <p class="program-info">Listen to lectures from speakers from around the world and learn about the latest trends in the world.</p>
       </div>
         <div class="program-card">
           <div class="program-top prgm">
             <img class="program-card-img" src="img/iconbox_3.png" alt="data input">
             <h4 class="program-card-title">Data</h4>
           </div>
-          <p class="program-info">Lorem ipsum dolor sit amet contur adipisicing elit. Randae, obcaecati.</p>
+          <p class="program-info">Let's meet the creations of artists from various fields who share the open spirit of CC.</p>
       </div>
         <div class="program-card">
           <div class="program-top prgm">
             <img class="program-card-img" src="img/conbox_2.png" alt="engineering team">
             <h4 class="program-card-title">Engineering</h4>
           </div>
-          <p class="program-info">Lorem ipsum dolor sit amet contur adipisicing elit. Randae, obcaecati.</p>
+          <p class="program-info">We have time to share our thoughts and opinions with experts by topic.</p>
       </div>
         <div class="program-card">
           <div class="program-top prgm">
             <img class="program-card-img" src="img/iconbox_1.png" alt="programmer team">
             <h4 class="program-card-title">Programmer</h4>
           </div>
-          <p class="program-info">Lorem ipsum dolor sit amet contur adipisicing elit. Randae, obcaecati.</p>
+          <p class="program-info">You can create your own creations using open source instead of just looking at them.</p>
       </div>
         <div class="program-card">
           <div class="program-top prgm">
             <img class="program-card-img" src="img/iconbox_3.png" alt="remotely">
             <h4 class="program-card-title">Remotely</h4>
           </div>
-          <p class="program-info">Lorem ipsum dolor sit amet contur adipisicing elit. Randae, obcaecati.</p>
+          <p class="program-info">Create opportunities to freely network with CC personnel from around the world.</p>
       </div>
-      <p class="join"><button class="join-btn">Join Us This 2022</button></p>
     </div>
+    <p class="join"><button class="join-btn hideDesktop">Join Us This 2022</button></p>
+    <p><a class="hideMobile">See The Whole Program</a></p>
     </section>
 
     <section id="speakers-section">
@@ -85,51 +108,54 @@
         <p class="title-line"></p>
         <p class="title-line"></p>
       </div>
-      <div class="speaker-container">
-        <div class="speaker-img">
-          <img src="img/angie-jones.jpg" alt="angie jones">
+      <div class="speakersDesktop">
+        <div class="speaker-container">
+          <div class="speaker-img">
+            <img src="img/angie-jones.jpg" alt="angie jones">
+          </div>
+          <div class="speaker-content">
+            <p class="speaker-name">Angie Jones</p>
+            <p class="speaker-title">Consectetur sint, maxime adipisci fuga nobis quo!</p>
+            <p class="line"></p>
+            <p class="speaker-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit dolort et uhuio </p>
+          </div>
         </div>
-        <div class="speaker-content">
-          <p class="speaker-name">Angie Jones</p>
-          <p class="speaker-title">Consectetur sint, maxime adipisci fuga nobis quo!</p>
-          <p class="line"></p>
-          <p class="speaker-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit dolort et uhuio </p>
+        <div class="speaker-container">
+          <div class="speaker-img">
+            <img src="img/Bjarne.jpg" alt="Bjarne">
+          </div>
+          <div class="speaker-content">
+            <p class="speaker-name">Bjarne Seko</p>
+            <p class="speaker-title">Consectetur sint, maxime adipisci fuga nobis quo!</p>
+            <p class="line"></p>
+            <p class="speaker-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit dolort et uhuio </p>
+          </div>
+        </div>
+        <div class="speaker-container">
+          <div class="speaker-img">
+            <img src="img/Cassie-Kozyrkov.jpg" alt="Cassie Kozyrkov">
+          </div>
+          <div class="speaker-content">
+            <p class="speaker-name">Cassie Kozyrkov</p>
+            <p class="speaker-title">Consectetur sint, maxime adipisci fuga nobis quo!</p>
+            <p class="line"></p>
+            <p class="speaker-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit dolort et uhuio </p>
+          </div>
+        </div>
+        <div class="speaker-container">
+          <div class="speaker-img">
+            <img src="img/Hakon-Wium-Lie.jpg" alt="Hakon Wium Lie">
+          </div>
+          <div class="speaker-content">
+            <p class="speaker-name">Hakon Wium Lie</p>
+            <p class="speaker-title">Consectetur sint, maxime adipisci fuga nobis quo!</p>
+            <p class="line"></p>
+            <p class="speaker-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit dolort et uhuio </p>
+          </div>
         </div>
       </div>
-      <div class="speaker-container">
-        <div class="speaker-img">
-          <img src="img/Bjarne.jpg" alt="Bjarne">
-        </div>
-        <div class="speaker-content">
-          <p class="speaker-name">Bjarne Seko</p>
-          <p class="speaker-title">Consectetur sint, maxime adipisci fuga nobis quo!</p>
-          <p class="line"></p>
-          <p class="speaker-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit dolort et uhuio </p>
-        </div>
-      </div>
-      <div class="speaker-container">
-        <div class="speaker-img">
-          <img src="img/Cassie-Kozyrkov.jpg" alt="Cassie Kozyrkov">
-        </div>
-        <div class="speaker-content">
-          <p class="speaker-name">Cassie Kozyrkov</p>
-          <p class="speaker-title">Consectetur sint, maxime adipisci fuga nobis quo!</p>
-          <p class="line"></p>
-          <p class="speaker-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit dolort et uhuio </p>
-        </div>
-      </div>
-      <div class="speaker-container">
-        <div class="speaker-img">
-          <img src="img/Hakon-Wium-Lie.jpg" alt="Hakon Wium Lie">
-        </div>
-        <div class="speaker-content">
-          <p class="speaker-name">Hakon Wium Lie</p>
-          <p class="speaker-title">Consectetur sint, maxime adipisci fuga nobis quo!</p>
-          <p class="line"></p>
-          <p class="speaker-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit dolort et uhuio </p>
-        </div>
-      </div>
-      <p class="more-btn"><button class="lng-Btn">More <img src="img/down_arrow.png" alt=""> </button></p>
+      <p class="more-btn more-btn-desktop hideMobile"><button class="lng-Btn">More <img src="img/down_arrow.png" alt=""> </button></p>
+      <p class="more-btn hideDesktop"><button class="lng-Btn">More <img src="img/down_arrow.png" alt=""> </button></p>
     </section>
 
     <section class="partners-section">
