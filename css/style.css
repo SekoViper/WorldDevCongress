@@ -357,6 +357,11 @@ p {
   justify-content: center;
   gap: 10px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.lng-Btn:hover {
+  background-color: var(--light_primary-color);
 }
 
 .more-btn {
@@ -421,6 +426,11 @@ p {
 .program-desktop-link {
   text-align: center;
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.program-desktop-link:hover {
+  color: var(--secondary-color);
 }
 
 .hide-link-mobile {
@@ -603,7 +613,7 @@ p {
   }
 
   .menu-items:hover {
-    border-bottom: 2px solid var(--light-color);
+    transform: translate(3px);
     transition: all 0.3s;
   }
 
