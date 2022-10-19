@@ -550,6 +550,10 @@ p {
   font-size: 26px;
 }
 
+.partners-container img:hover {
+  transform: translate(3px);
+}
+
 .past-event-desc {
   padding: 1rem 2rem;
   text-align: center;
