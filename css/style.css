@@ -98,9 +98,11 @@ p {
   height: 5px;
   background-color: var(--primary-color);
   margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-header {
+.header-content {
   padding: 15px 20px 60px;
 }
 
@@ -135,6 +137,11 @@ header {
   color: var(--secondary-color);
 }
 
+.menu {
+  left: -100%;
+  position: absolute;
+}
+
 .menu-items {
   list-style-type: none;
   font-size: 16px;
@@ -142,10 +149,92 @@ header {
 
 .menu-items a {
   text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  line-height: 67px;
+}
+
+.show-menu {
+  left: 0;
+}
+
+.show-bg {
+  background-color: var(--light_primary-color);
+  height: 60vh;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 15px;
+}
+
+.active .bars:nth-child(1) {
+  top: 14px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg) translateY(4px);
+}
+
+.active .bars:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.active .bars:nth-child(3) {
+  transform: rotate(-45deg) translate(10.5px, -14px);
+  top: 14px;
+  background-color: rgb(255, 255, 255);
 }
 
 .social-nav {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 2rem;
+  left: -100%;
+  position: relative;
+  padding-top: 140%;
+}
+
+.show-social-nav {
+  left: 0;
+}
+
+.menu-only {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  left: -100%;
+  position: absolute;
+}
+
+.menu-only-show{
+  left: 0;
+}
+
+.social-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-img img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.social-menu-item {
+  list-style-type: none;
+  color: #fff;
+}
+
+.social-menu-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 /* main program section */
@@ -371,6 +460,8 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    left: 0;
+    position: inherit;
   }
 
   .menu-items {
@@ -382,8 +473,27 @@ header {
     transition: all 0.7s;
   }
 
+  .menu-only {
+    display: block;
+    left: 0;
+    position: inherit;
+  }
+
+  .menu-items a {
+    text-decoration: none;
+    color: var(--light_primary-color)
+  }
+
+  .social-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 2rem;
+    left: 0;
+    padding-top: 0;
+}
   .active {
-    color: var(--secondary-color);
+    color: var(--secondary-color) !important;
   }
 
   .active-btn {

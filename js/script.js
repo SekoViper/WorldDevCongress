@@ -1,3 +1,17 @@
+const navMenu = document.querySelector('.menu');
+const toggler = document.querySelector('.toggler');
+const menuContainer = document.querySelector('.menu-bg');
+const socialMenu = document.querySelector('.social-nav');
+const mainMenuContainer = document.querySelector('.menu-only');
+
+
+toggler.addEventListener('click', () => {
+  toggler.classList.toggle('active');
+  navMenu.classList.toggle('show-menu');
+  menuContainer.classList.toggle('show-bg');
+  socialMenu.classList.toggle('show-social-nav');
+  mainMenuContainer.classList.toggle('menu-only-show');
+})
 
 
 // speakers
@@ -34,7 +48,6 @@ speakers = [
 
 const container = document.getElementById('speakers');
 speakers.forEach(speaker => {
-  console.log(speaker);
   const content = `
     <div class="speaker-container">
       <div class="speaker-img">
