@@ -68,10 +68,16 @@ function generateSpeakers() {
 
 // getting the more button to function on click
 const moreBtn = document.getElementById('loadMore');
-const imgBtn = document.getElementById('btn-img');
 const moreBtnText = document.getElementById('more-btn-text');
 const moreBtnImg = document.getElementById('more-btn-img');
 const speakersContainer = document.getElementById('speakers');
+function deleteChild() {
+  let child = speakersContainer.lastElementChild;
+  while (child) {
+    speakersContainer.removeChild(child);
+    child = speakersContainer.lastElementChild;
+  }
+}
 moreBtn.addEventListener('click', () => {
   if (moreBtnText.innerText === 'More') {
     moreBtnText.innerText = 'Less';
@@ -95,17 +101,8 @@ if (window.innerWidth <= 768) {
   index = 2;
   filteredSpeakers = speakers.slice(0, index);
   generateSpeakers();
-  console.log(filteredSpeakers);
 } else {
   index = 6;
   filteredSpeakers = speakers.slice(0, index);
   generateSpeakers();
-}
-
-function deleteChild() {
-  let child = speakersContainer.lastElementChild;
-  while (child) {
-    speakersContainer.removeChild(child);
-    child = speakersContainer.lastElementChild;
-  }
 }
