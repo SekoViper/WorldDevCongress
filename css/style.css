@@ -149,7 +149,7 @@ p {
   transition: all 0.3s ease-in-out;
   padding: 15px;
   position: fixed;
-  width: -webkit-fill-available;
+  width: 100%;
 }
 
 .active .bars:nth-child(1) {
@@ -512,7 +512,9 @@ p {
 }
 
 .bootchamp-two {
-  background-image: url(../img/codingbootcamps.jpeg.jpg), linear-gradient(#ec5242, #ec5242);
+  background-image:
+    url(../img/codingbootcamps.jpeg.jpg),
+    linear-gradient(#ec5242, #ec5242);
   background-position: center;
   background-blend-mode: overlay;
   background-size: cover;
@@ -718,7 +720,6 @@ p {
     transition: all 0.8s;
     box-shadow: 1px 2px 9px 0 rgba(255, 255, 255, 0.66);
     -webkit-box-shadow: 1px 2px 9px 0 rgba(255, 255, 255, 0.66);
-    -moz-box-shadow: 1px 2px 9px 0 rgba((255, 255, 255, 0.66) 55, 0.66);
   }
 
   .program-top {
@@ -751,7 +752,7 @@ p {
   .more-btn-desktop {
     text-align: center;
   }
-  
+
   .more-btn {
     cursor: pointer;
     text-align: center;
@@ -764,7 +765,7 @@ p {
   /* about page  */
   .bootchamps {
     display: flex;
-    margin: 0 0rem;
+    margin: 0;
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
@@ -781,23 +782,23 @@ p {
 
   #about-event-section {
     padding: 6rem 300px;
-}
+  }
 
-.about-subtitle {
-  display: none;
-}
+  .about-subtitle {
+    display: none;
+  }
 
-.about-heading {
-  padding: 6rem 30rem;
-  font-size: 6rem;
-}
+  .about-heading {
+    padding: 6rem 30rem;
+    font-size: 6rem;
+  }
 
-.about-desc {
-  margin: 0 30rem;
-  padding: 3rem;
-}
+  .about-desc {
+    margin: 0 30rem;
+    padding: 3rem;
+  }
 
-.about-content {
-  padding: 5rem 0;
-}
+  .about-content {
+    padding: 5rem 0;
+  }
 }

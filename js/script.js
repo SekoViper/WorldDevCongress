@@ -45,19 +45,67 @@ const speakers = [
 ];
 
 const container = document.getElementById('speakers');
-speakers.forEach((speaker) => {
-  const content = `
-    <div class="speaker-container">
-      <div class="speaker-img">
-        <img src="${speaker.imgUrl}" alt="angie jones">
+let filteredSpeakers;
+let index;
+function generateSpeakers() {
+  filteredSpeakers.forEach((speaker) => {
+    const content = `
+      <div class="speaker-container">
+        <div class="speaker-img">
+          <img src="${speaker.imgUrl}" alt="angie jones">
+        </div>
+        <div class="speaker-content">
+          <p class="speaker-name">${speaker.name}</p>
+          <p class="speaker-title">${speaker.title}</p>
+          <p class="line"></p>
+          <p class="speaker-desc">${speaker.bio}</p>
+        </div>
       </div>
-      <div class="speaker-content">
-        <p class="speaker-name">${speaker.name}</p>
-        <p class="speaker-title">${speaker.title}</p>
-        <p class="line"></p>
-        <p class="speaker-desc">${speaker.bio}</p>
-      </div>
-    </div>
-  `;
-  container.innerHTML += content;
+    `;
+    container.innerHTML += content;
+  });
+}
+
+// getting the more button to function on click
+const moreBtn = document.getElementById('loadMore');
+const imgBtn = document.getElementById('btn-img');
+const moreBtnText = document.getElementById('more-btn-text');
+const moreBtnImg = document.getElementById('more-btn-img');
+const speakersContainer = document.getElementById('speakers');
+moreBtn.addEventListener('click', () => {
+  if (moreBtnText.innerText === 'More') {
+    moreBtnText.innerText = 'Less';
+    moreBtnImg.style.rotate = '180deg';
+    deleteChild();
+    index = 6;
+    filteredSpeakers = speakers.slice(0, index);
+    generateSpeakers();
+  } else {
+    moreBtnText.innerText = 'More';
+    moreBtnImg.style.rotate = '0deg';
+    deleteChild();
+    index = 2;
+    filteredSpeakers = speakers.slice(0, index);
+    generateSpeakers();
+  }
 });
+
+// get number of speakers to display on each screen size
+if (window.innerWidth <= 768) {
+  index = 2;
+  filteredSpeakers = speakers.slice(0, index);
+  generateSpeakers();
+  console.log(filteredSpeakers);
+} else {
+  index = 6;
+  filteredSpeakers = speakers.slice(0, index);
+  generateSpeakers();
+}
+
+function deleteChild() {
+  let child = speakersContainer.lastElementChild;
+  while (child) {
+    speakersContainer.removeChild(child);
+    child = speakersContainer.lastElementChild;
+  }
+}
