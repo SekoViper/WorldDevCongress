@@ -176,7 +176,7 @@ p {
   padding: 5px 2rem;
   left: -100%;
   position: relative;
-  padding-top: 140%;
+  padding-top: 160%;
 }
 
 .show-social-nav {
@@ -482,6 +482,12 @@ p {
   margin-top: 4rem;
   display: flex;
   justify-content: center;
+  transition: all 0.3s;
+}
+
+.about-logo:hover {
+  transform: scale(1.6);
+  border: none;
 }
 
 #about-event-section {
@@ -799,8 +805,20 @@ p {
     padding: 7rem 7rem;
   }
 
+  .bootchamp-two:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 6px 42px -10px rgba(236,82,66,0.75);
+    -webkit-box-shadow: 2px 6px 42px -10px rgba(236,82,66,0.75);
+  }
+
   .bootchamp-one {
     padding: 7rem 7rem;
+  }
+
+  .bootchamp-one:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 6px 42px -10px rgba(236,82,66,0.75);
+    -webkit-box-shadow: 2px 6px 42px -10px rgba(236,82,66,0.75);
   }
 
   #about-event-section {
