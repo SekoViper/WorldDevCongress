@@ -807,8 +807,8 @@ p {
 
   .bootchamp-two:hover {
     transform: scale(1.01);
-    box-shadow: 2px 6px 42px -10px rgba(236,82,66,0.75);
-    -webkit-box-shadow: 2px 6px 42px -10px rgba(236,82,66,0.75);
+    box-shadow: 2px 6px 42px -10px rgba(236, 82, 66, 0.75);
+    -webkit-box-shadow: 2px 6px 42px -10px rgba(236, 82, 66, 0.75);
   }
 
   .bootchamp-one {
@@ -817,8 +817,8 @@ p {
 
   .bootchamp-one:hover {
     transform: scale(1.01);
-    box-shadow: 2px 6px 42px -10px rgba(236,82,66,0.75);
-    -webkit-box-shadow: 2px 6px 42px -10px rgba(236,82,66,0.75);
+    box-shadow: 2px 6px 42px -10px rgba(236, 82, 66, 0.75);
+    -webkit-box-shadow: 2px 6px 42px -10px rgba(236, 82, 66, 0.75);
   }
 
   #about-event-section {
@@ -845,7 +845,7 @@ p {
 
   .show-footer-mobile {
     display: none;
-  } 
+  }
 
   .show-footer-desktop {
     display: flex;
