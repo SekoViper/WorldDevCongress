@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +16,135 @@
   <title>NGC Congress</title>
 </head>
 <body>
-  
+  <header class="menu-container">
+    <div class="menu-bg">
+      <div class="toggler">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </div>
+      <div class="menu-only">
+        <div class="social-nav">
+          <div class="social-img">
+            <a href="#"><img src="img/facebook_icon.png" alt="facebook icon"></a>
+            <a href="#"><img src="img/telegram_icon.png" alt="telegram icon"></a>
+          </div>
+          <ul class="social-menu">
+            <li class="social-menu-item"><a href="#">English</a></li>
+            <li class="social-menu-item"><a href="#">My Page</a></li>
+            <li class="social-menu-item"><a href="#">Logo Out</a></li>
+          </ul>
+        </div>
+       <div class="nav-container">
+        <a href="/"><img class="logo" src="img/nextgencodez_logo.png" alt="ngc logo"></a>
+        <nav class="nav-menu">
+          <ul class="menu">
+            <li class="menu-items"><a class="active" href="about.html">About</a></li>
+            <li class="menu-items"><a href="#">Program</a></li>
+            <li class="menu-items"><a href="#">Join</a></li>
+            <li class="menu-items"><a href="#">Sponsor</a></li>
+            <li class="menu-items"><a class="active-btn" href="#">CC Campaign</a></li>
+          </ul>
+        </nav>
+       </div>
+      </div>
+    </div>
+    <div class="header-content">
+      <p class="sub-title">NGC Dev Congress</p>
+      <h1 class="header-title">THE WORLD'S LEADING DEVELOPER EVENT</h1>
+      <p class="header-info">The 2022 edition in Berlin was a blast. The 2023 forecast says that it will be even bigger, better, and brighter next year!</p>
+      <h3 class="event-date">2022.11.02(THUR) ~ 16(FRI)</h3>
+      <p>@ Ipsum dolor sit amet consectetur deitre sit.</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="main-program-section" class="main-program-section">
+      <h3 class="section-title">Main Program</h3>
+      <div class="title-line-container">
+        <p class="title-line"></p>
+        <p class="title-line"></p>
+      </div>
+      <div class="program-container">
+        <div class="program-card">
+          <div class="program-top prgm">
+            <img class="program-card-img" src="img/iconbox_1.png" alt="content team">
+            <h4 class="program-card-title">Content</h4>
+          </div>
+          <p class="program-info">Listen to lectures from speakers from around the world and learn about the latest trends in the world.</p>
+      </div>
+        <div class="program-card">
+          <div class="program-top prgm">
+            <img class="program-card-img" src="img/iconbox_3.png" alt="data input">
+            <h4 class="program-card-title">Data</h4>
+          </div>
+          <p class="program-info">Let's meet the creations of artists from various fields who share the open spirit of CC.</p>
+      </div>
+        <div class="program-card">
+          <div class="program-top prgm">
+            <img class="program-card-img" src="img/conbox_2.png" alt="engineering team">
+            <h4 class="program-card-title">Engineering</h4>
+          </div>
+          <p class="program-info">We have time to share our thoughts and opinions with experts by topic.</p>
+      </div>
+        <div class="program-card">
+          <div class="program-top prgm">
+            <img class="program-card-img" src="img/iconbox_1.png" alt="programmer team">
+            <h4 class="program-card-title">Programmer</h4>
+          </div>
+          <p class="program-info">You can create your own creations using open source instead of just looking at them.</p>
+      </div>
+        <div class="program-card">
+          <div class="program-top prgm">
+            <img class="program-card-img" src="img/iconbox_3.png" alt="remotely">
+            <h4 class="program-card-title">Remotely</h4>
+          </div>
+          <p class="program-info">Create opportunities to freely network with CC personnel from around the world.</p>
+      </div>
+    </div>
+    <p class="join"><button class="join-btn hide-link-desktop">Join Us This 2022</button></p>
+    <p class="program-desktop-link"><a class="hide-link-mobile">See The Whole Program</a></p>
+    </section>
+
+    <section id="speakers-section">
+      <h3 class="section-title">Featured Speakers</h3>
+      <div class="title-line-container">
+        <p class="title-line"></p>
+        <p class="title-line"></p>
+      </div>
+      <div class="speakersDesktop" id="speakers">
+        <!-- generated speakers dynamically -->
+      </div>
+      <p class="more-btn more-btn-desktop"><button id="loadMore" class="lng-Btn"> <span id="more-btn-text">More</span> <span id="more-btn-img"><img id="btn-img" src="img/down_arrow.png" alt=""> </span> </button></p>
+    </section>
+
+    <section class="partners-section">
+      <h3 class="section-title">Partners</h3>
+      <div class="title-line-container">
+        <p class="title-line"></p>
+        <p class="title-line"></p>
+      </div>
+      <div class="partners-container">
+        <img src="img/google.png" alt="Google">
+        <img src="img/airbnb.png" alt="Airbnb">
+        <img src="img/mozila.png" alt="Mozilla">
+        <img src="img/daum.png" alt="Daum">
+        <img src="img/naver.png" alt="Naver">
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logo-container">
+          <img src="img/nextgencodez-logo.png" alt="">
+        </div>
+        <div class="footer-content">
+          <p>2022 creative commons Ghana. All rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
