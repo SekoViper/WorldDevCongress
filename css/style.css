@@ -560,6 +560,14 @@ p {
   text-align: center;
 }
 
+.show-footer-mobile {
+  display: flex;
+}
+
+.show-footer-desktop {
+  display: none;
+}
+
 /* ---------------------desktop version---------------- */
 
 /* ---------------------- Medium devices (landscape tablets, 768px and up)---------------------- */
@@ -815,5 +823,16 @@ p {
 
   .about-content {
     padding: 5rem 0;
+  }
+
+  .show-footer-mobile {
+    display: none;
+  } 
+
+  .show-footer-desktop {
+    display: flex;
+    background-color: var(--light_primary-color);
+    color: #fff;
+    padding: 6rem 0;
   }
 }
