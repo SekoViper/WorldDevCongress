@@ -101,6 +101,8 @@ p {
 
 .menu-container {
   background-image: url(../img/coding-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-title {
@@ -736,12 +738,14 @@ p {
     flex-direction: column;
     flex: 1;
     height: 257px;
+    align-items: center;
+    justify-content: center;
   }
 
   .program-container {
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 46px 10px;
   }
 
   .program-card:hover {
